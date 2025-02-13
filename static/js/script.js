@@ -4,24 +4,24 @@ let sc3 = document.querySelector('#sc3');
 let currentIndex = 0;
 let isScrolling = false;
 
-function scroll(index){
-  if (index >= 0 && index < sections.length){
+function scroll(index) {
+  if (index >= 0 && index < sections.length) {
     isScrolling = true;
-    sections[index].scrollIntoView({behavior : 'smooth'});
+    sections[index].scrollIntoView({ behavior: 'smooth' });
     currentIndex = index;
-    setTimeout(() => {isScrolling = false;}, 700);
+    setTimeout(() => { isScrolling = false; }, 700);
   }
 }
 
 document.addEventListener('wheel', (event) => {
-  if (isScrolling) return ;
-  if (event.deltaY > 0){
+  if (isScrolling) return;
+  if (event.deltaY > 0) {
     scroll(currentIndex + 1);
-  }else{
+  } else {
     scroll(currentIndex - 1);
   }
   event.preventDefault();
-}, {passive : false});
+}, { passive: false });
 
 sc2.addEventListener('click', (event) => {
   currentIndex = 1;
@@ -32,3 +32,10 @@ sc3.addEventListener('click', (event) => {
   currentIndex = 2;
   scroll(currentIndex);
 });
+
+function chosenImage(id) {
+  card_img = document.getElementById('cardImage');
+  img_name = String(id) + '.jpg';
+  console.log('./static/img/card_img/' + img_name);
+  card_img.src = './static/img/card_img/' + img_name;
+}
