@@ -157,6 +157,21 @@ a{
   object-fit:cover;
 }
 
+#left{
+  width:60%;
+  height:100%;
+}
+
+#right{
+  width:40%;
+  height:100%;
+}
+
+#sc3-logo{
+  width:100%;
+  height:30%;
+}
+
 .sc3_text_box{
   font-family: 'JalnanGothic';
   position : absolute;
@@ -171,6 +186,11 @@ a{
   left: 9.2%;
 }
 
+#map-box{
+  width:100%;
+  height:70%;
+}
+
 #map{
   height:90%;
 }
@@ -179,27 +199,34 @@ a{
   position:absolute;
   width: 3vw;
   height:auto;
+  opacity: 0.6;
+  cursor: zoom-in;
+  transition:opacity 0.1s ease-in-out;
+}
+
+.marking:hover{
+  opacity: 1;
 }
 
 /* location */
 #train{
   top:69%;
-  left:38%;
+  left:36%;
 }
 
 #past{
   top:54%;
-  left:45%;
+  left:43%;
 }
 
 #eat{
   top:17%;
-  left:79%;
+  left:73%;
 }
 
 #festival{
   top:34%;
-  left:66%;
+  left:62%;
 }
 
 #sake{
@@ -209,11 +236,11 @@ a{
 
 #onsen{
   top:48%;
-  left:62%;
+  left:57%;
 }
 
 #cat{
   top:67%;
-  left:47%;
+  left:44%;
 
 }

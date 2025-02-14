@@ -133,31 +133,34 @@
         </div>
       </section>
       <section id="section3">
-        <div class='w-100 h-100'>
-          <div class = 'd-flex flex-row w-100 h-100'>
-            <div id = 'left' class = 'd-flex flex-column'>
-              <div id = 'sc3-logo' class = 'position-relative d-flex'>
-                <p class = 'sc3_text_box logo_text'>이번 여행은 어떤 여행이 될까요?</p>
+        <div class = 'w-100 h-100'>
+          <div class = 'd-flex align-items-start w-100 mb-3' style='height:30%;'>
+            <div class = 'position-relative w-100 h-100'>
+              <div class = 'position-absolute w-100 h-100'>
+                <p class = 'sc3_text_box logo_text'>어떤 여행을 원하시나요?</p>
                 <p class = 'description3 position-absolute'>이번 여행을 어떤 여행으로 만들어보고 싶으신가요?</p>
-                <p class = 'description3 position-absolute' style = "top:85%">당신의 일본 여행을 위한 다양한 주제들을 살펴보세요</p>
-              </div>
-              <div id = 'map-box' class = 'position-relative d-flex justify-content-center'>
-                <img id = 'map' src="./static/img/map.png" alt="">
-                <img id = 'train' src="./static/img/mark.png" alt="" class = 'marking' onclick = 'chosenImage(this.id)'>
-                <img id = 'past' src="./static/img/mark.png" alt="" class = 'marking' onclick = 'chosenImage(this.id)'>
-                <img id = 'eat' src="./static/img/mark.png" alt="" class = 'marking' onclick = 'chosenImage(this.id)'>
-                <img id = 'festival' src="./static/img/mark.png" alt="" class = 'marking' onclick = 'chosenImage(this.id)'>
-                <img id = 'sake' src="./static/img/mark.png" alt="" class = 'marking' onclick = 'chosenImage(this.id)'>
-                <img id = 'onsen' src="./static/img/mark.png" alt="" class = 'marking' onclick = 'chosenImage(this.id)'>
-                <img id = 'cat' src="./static/img/mark.png" alt="" class = 'marking' onclick = 'chosenImage(this.id)'>
+                <p class = 'description3 position-absolute' style='top:85%;'>일본 여행의 다양한 주제들을 둘러보세요</p>
               </div>
             </div>
-            <div id = 'right' class = 'd-flex justify-content-center align-items-end pb-5 pe-5'>
-              <div class="card mb-3 border border-0 shadow-lg p-3" style = 'height:80%; width:80%;'>
-                <img id = 'cardImage' src="./static/img/card_img/init.jpg" class="card-img-top object-fit-cover" alt="..." style ='border-radius:0.375rem;height:65%;'>
+          </div>
+          <div class = 'd-flex w-100' style = 'height:70%;'>
+            <div class='position-relative d-flex h-100 justify-content-end align-items-top' style='width:60%;'>
+              <img id = 'map' src="./static/img/map.png" alt="japan_map">
+              <img id = 'train' src="./static/img/mark.png" alt="" class = 'marking' onclick = 'chosenImage(this.id)'>
+              <img id = 'past' src="./static/img/mark.png" alt="" class = 'marking' onclick = 'chosenImage(this.id)'>
+              <img id = 'eat' src="./static/img/mark.png" alt="" class = 'marking' onclick = 'chosenImage(this.id)'>
+              <img id = 'festival' src="./static/img/mark.png" alt="" class = 'marking' onclick = 'chosenImage(this.id)'>
+              <img id = 'sake' src="./static/img/mark.png" alt="" class = 'marking' onclick = 'chosenImage(this.id)'>
+              <img id = 'onsen' src="./static/img/mark.png" alt="" class = 'marking' onclick = 'chosenImage(this.id)'>
+              <img id = 'cat' src="./static/img/mark.png" alt="" class = 'marking' onclick = 'chosenImage(this.id)'>
+            </div>
+            <div class = 'd-flex justify-content-center' style ='width:50%;'>
+              <div class="card mb-3 border border-0" style = 'height:90%; width:80%;'>
+                <img id = 'cardImage' src="./static/img/jj-ying-9Qwbfa_RM94-unsplash.jpg" class="card-img-top object-fit-cover h-50" alt="..." style ='border-radius:0.375rem'>
                 <div class="card-body">
-                  <h5 class="card-title">어디로 가볼까요?</h5>
-                  <p class="card-text">왼쪽의 지도의 핀을 클릭해보세요!</p>
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
                 </div>
               </div>
             </div>
