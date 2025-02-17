@@ -208,6 +208,10 @@ a{
   opacity: 1;
 }
 
+#cardImage{
+  cursor: pointer;
+}
+
 /* location */
 #train{
   top:69%;
